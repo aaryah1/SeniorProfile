@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeWise Seniors Portal</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+    </style>
+</head>
+<body class="bg-gray-50 font-poppins min-h-screen">
+    <main class="container mx-auto px-4 py-12">
+        <header class="text-center mb-16">
+            <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">CodeWise Seniors</h1>
+            <p class="text-xl text-gray-600 max-w-2xl mx-auto">Your gateway to coding mastery and career growth</p>
+        </header>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <!-- About Me Card -->
+            <a href="/about" class="group">
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-2 h-full flex flex-col">
+                    <div class="bg-indigo-100 p-8 flex justify-center">
+                        <i data-feather="user" class="w-16 h-16 text-indigo-600 group-hover:text-indigo-700 transition-colors"></i>
+                    </div>
+                    <div class="p-6 flex-grow">
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-2">About Me</h3>
+                        <p class="text-gray-600">Share your story, skills, and coding journey with fellow seniors.</p>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Labs and Projects Card -->
+            <a href="/projects" class="group">
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-2 h-full flex flex-col">
+                    <div class="bg-blue-100 p-8 flex justify-center">
+                        <i data-feather="code" class="w-16 h-16 text-blue-600 group-hover:text-blue-700 transition-colors"></i>
+                    </div>
+                    <div class="p-6 flex-grow">
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-2">Labs & Projects</h3>
+                        <p class="text-gray-600">Showcase your coding projects and lab assignments.</p>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Career Financial Development Card -->
+            <a href="/career" class="group">
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-2 h-full flex flex-col">
+                    <div class="bg-green-100 p-8 flex justify-center">
+                        <i data-feather="dollar-sign" class="w-16 h-16 text-green-600 group-hover:text-green-700 transition-colors"></i>
+                    </div>
+                    <div class="p-6 flex-grow">
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-2">Career & Finance</h3>
+                        <p class="text-gray-600">Resources for career growth and financial planning.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <footer class="mt-20 text-center text-gray-500">
+            <p>© 2023 CodeWise Seniors. All rights reserved.</p>
+        </footer>
+    </main>
+
+    <script>
+        feather.replace();
+    </script>
+</body>
+</html>
