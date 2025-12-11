@@ -1,72 +1,309 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <base target="_self">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CodeWise Seniors Portal</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Aarya Haque - Senior Profile</title>
+    <meta name="description" content="Aarya Haque's Senior Profile for 2025-2026 Web & Design">
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
-    <script src="https://unpkg.com/feather-icons"></script>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'pastel-pink': '#ffd6e7',
+                        'pastel-blue': '#d6f5ff',
+                        'pastel-purple': '#e6d6ff',
+                        'pastel-pink-dark': '#ffb8d9',
+                        'pastel-blue-dark': '#b3e6ff',
+                        'pastel-purple-dark': '#d1b3ff'
+                    },
+                    fontFamily: {
+                        'dancing': ['Dancing Script', 'cursive'],
+                        'playfair': ['Playfair Display', 'serif'],
+                        'raleway': ['Raleway', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
 </head>
-<body class="bg-gray-50 font-poppins min-h-screen">
-    <main class="container mx-auto px-4 py-12">
-        <header class="text-center mb-16">
-            <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">CodeWise Seniors</h1>
-            <p class="text-xl text-gray-600 max-w-2xl mx-auto">Your gateway to coding mastery and career growth</p>
-        </header>
-
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            <!-- About Me Card -->
-            <a href="/about" class="group">
-                <div class="bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-2 h-full flex flex-col">
-                    <div class="bg-indigo-100 p-8 flex justify-center">
-                        <i data-feather="user" class="w-16 h-16 text-indigo-600 group-hover:text-indigo-700 transition-colors"></i>
-                    </div>
-                    <div class="p-6 flex-grow">
-                        <h3 class="text-2xl font-semibold text-gray-800 mb-2">About Me</h3>
-                        <p class="text-gray-600">Share your story, skills, and coding journey with fellow seniors.</p>
-                    </div>
-                </div>
-            </a>
-
-            <!-- Labs and Projects Card -->
-            <a href="/projects" class="group">
-                <div class="bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-2 h-full flex flex-col">
-                    <div class="bg-blue-100 p-8 flex justify-center">
-                        <i data-feather="code" class="w-16 h-16 text-blue-600 group-hover:text-blue-700 transition-colors"></i>
-                    </div>
-                    <div class="p-6 flex-grow">
-                        <h3 class="text-2xl font-semibold text-gray-800 mb-2">Labs & Projects</h3>
-                        <p class="text-gray-600">Showcase your coding projects and lab assignments.</p>
-                    </div>
-                </div>
-            </a>
-
-            <!-- Career Financial Development Card -->
-            <a href="/career" class="group">
-                <div class="bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-2 h-full flex flex-col">
-                    <div class="bg-green-100 p-8 flex justify-center">
-                        <i data-feather="dollar-sign" class="w-16 h-16 text-green-600 group-hover:text-green-700 transition-colors"></i>
-                    </div>
-                    <div class="p-6 flex-grow">
-                        <h3 class="text-2xl font-semibold text-gray-800 mb-2">Career & Finance</h3>
-                        <p class="text-gray-600">Resources for career growth and financial planning.</p>
-                    </div>
-                </div>
-            </a>
+<body class="min-h-screen bg-gradient-to-br from-pastel-pink via-pastel-blue to-pastel-purple font-raleway">
+    <!-- Main Content Container -->
+    <div class="min-h-screen flex flex-col items-center justify-center px-4 py-12">
+        <!-- Title Section -->
+        <div class="text-center mb-12">
+            <h1 class="text-5xl md:text-6xl lg:text-7xl font-playfair font-bold text-gray-800 mb-4">
+                Aarya Haque's Senior Profile
+            </h1>
+            <h2 class="text-2xl md:text-3xl lg:text-4xl font-dancing text-gray-700 mb-8">
+                2025-2026 Web & Design
+            </h2>
         </div>
 
-        <footer class="mt-20 text-center text-gray-500">
-            <p>© 2023 CodeWise Seniors. All rights reserved.</p>
+        <!-- Avatar Circle -->
+        <div class="mb-16">
+            <div class="w-48 h-48 rounded-full bg-gradient-to-br from-pastel-pink-dark via-pastel-blue-dark to-pastel-purple-dark border-8 border-white shadow-2xl flex items-center justify-center">
+                <div class="text-center">
+                    <i class="fas fa-user-circle text-6xl text-white opacity-80"></i>
+                    <p class="text-white font-medium mt-2 text-lg">Avatar</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation Icons Grid -->
+        <div class="w-full max-w-4xl">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
+                <!-- Row 1: About Me (Left) and Projects (Right) -->
+                <div class="flex flex-col md:flex-row md:col-span-2 gap-8 md:gap-12">
+                    <!-- About Me Icon -->
+                    <div class="flex-1">
+                        <a href="about.html" class="block h-full" onclick="event.preventDefault(); navigateTo('about')">
+                            <div class="bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 h-full border-4 border-pastel-pink-dark">
+                                <div class="flex flex-col items-center justify-center h-full">
+                                    <div class="w-24 h-24 rounded-full bg-pastel-pink flex items-center justify-center mb-6">
+                                        <i class="fas fa-user text-4xl text-pastel-pink-dark"></i>
+                                    </div>
+                                    <h3 class="text-3xl font-playfair font-bold text-gray-800 mb-3">About Me</h3>
+                                    <p class="text-gray-600 text-center text-lg">
+                                        Learn more about my journey, interests, and aspirations
+                                    </p>
+                                    <div class="mt-6">
+                                        <span class="inline-flex items-center text-pastel-pink-dark font-medium">
+                                            Explore
+                                            <i class="fas fa-arrow-right ml-2"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Projects Icon -->
+                    <div class="flex-1">
+                        <a href="projects.html" class="block h-full" onclick="event.preventDefault(); navigateTo('projects')">
+                            <div class="bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 h-full border-4 border-pastel-blue-dark">
+                                <div class="flex flex-col items-center justify-center h-full">
+                                    <div class="w-24 h-24 rounded-full bg-pastel-blue flex items-center justify-center mb-6">
+                                        <i class="fas fa-code text-4xl text-pastel-blue-dark"></i>
+                                    </div>
+                                    <h3 class="text-3xl font-playfair font-bold text-gray-800 mb-3">Projects</h3>
+                                    <p class="text-gray-600 text-center text-lg">
+                                        View my web development and design portfolio
+                                    </p>
+                                    <div class="mt-6">
+                                        <span class="inline-flex items-center text-pastel-blue-dark font-medium">
+                                            Explore
+                                            <i class="fas fa-arrow-right ml-2"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Row 2: Resume (Left) and Digital Notebook (Right) -->
+                <div class="flex flex-col md:flex-row md:col-span-2 gap-8 md:gap-12">
+                    <!-- Resume Icon -->
+                    <div class="flex-1">
+                        <a href="resume.html" class="block h-full" onclick="event.preventDefault(); navigateTo('resume')">
+                            <div class="bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 h-full border-4 border-pastel-purple-dark">
+                                <div class="flex flex-col items-center justify-center h-full">
+                                    <div class="w-24 h-24 rounded-full bg-pastel-purple flex items-center justify-center mb-6">
+                                        <i class="fas fa-file-alt text-4xl text-pastel-purple-dark"></i>
+                                    </div>
+                                    <h3 class="text-3xl font-playfair font-bold text-gray-800 mb-3">Resume</h3>
+                                    <p class="text-gray-600 text-center text-lg">
+                                        Download and view my professional resume
+                                    </p>
+                                    <div class="mt-6">
+                                        <span class="inline-flex items-center text-pastel-purple-dark font-medium">
+                                            Explore
+                                            <i class="fas fa-arrow-right ml-2"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Digital Notebook Icon -->
+                    <div class="flex-1">
+                        <a href="notebook.html" class="block h-full" onclick="event.preventDefault(); navigateTo('notebook')">
+                            <div class="bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 h-full border-4 border-pastel-pink">
+                                <div class="flex flex-col items-center justify-center h-full">
+                                    <div class="w-24 h-24 rounded-full bg-gradient-to-r from-pastel-pink to-pastel-blue flex items-center justify-center mb-6">
+                                        <i class="fas fa-book text-4xl text-gray-700"></i>
+                                    </div>
+                                    <h3 class="text-3xl font-playfair font-bold text-gray-800 mb-3">Digital Notebook</h3>
+                                    <p class="text-gray-600 text-center text-lg">
+                                        Browse through my thoughts, notes, and ideas
+                                    </p>
+                                    <div class="mt-6">
+                                        <span class="inline-flex items-center text-gray-700 font-medium">
+                                            Explore
+                                            <i class="fas fa-arrow-right ml-2"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="mt-16 text-center">
+            <p class="text-gray-600 mb-2">© 2025-2026 Aarya Haque</p>
+            <p class="text-gray-500 text-sm">Senior Profile - Web & Design</p>
         </footer>
-    </main>
+    </div>
+
+    <!-- Create Subpages -->
+    <div style="display: none;">
+        <!-- About Page -->
+        <template id="about-page">
+            <!DOCTYPE html>
+            <html lang="en">
+            <head>
+                <base target="_self">
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>About Me - Aarya Haque</title>
+                <meta name="description" content="Learn more about Aarya Haque's journey, interests, and aspirations">
+            </head>
+            <body>
+                <!-- About page content will go here -->
+            </body>
+            </html>
+        </template>
+
+        <!-- Projects Page -->
+        <template id="projects-page">
+            <!DOCTYPE html>
+            <html lang="en">
+            <head>
+                <base target="_self">
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Projects - Aarya Haque</title>
+                <meta name="description" content="Aarya Haque's web development and design portfolio">
+            </head>
+            <body>
+                <!-- Projects page content will go here -->
+            </body>
+            </html>
+        </template>
+
+        <!-- Resume Page -->
+        <template id="resume-page">
+            <!DOCTYPE html>
+            <html lang="en">
+            <head>
+                <base target="_self">
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Resume - Aarya Haque</title>
+                <meta name="description" content="Aarya Haque's professional resume">
+            </head>
+            <body>
+                <!-- Resume page content will go here -->
+            </body>
+            </html>
+        </template>
+
+        <!-- Digital Notebook Page -->
+        <template id="notebook-page">
+            <!DOCTYPE html>
+            <html lang="en">
+            <head>
+                <base target="_self">
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Digital Notebook - Aarya Haque</title>
+                <meta name="description" content="Aarya Haque's digital notebook with thoughts, notes, and ideas">
+            </head>
+            <body>
+                <!-- Digital notebook content will go here -->
+            </body>
+            </html>
+        </template>
+    </div>
 
     <script>
-        feather.replace();
+        // Navigation function
+        function navigateTo(page) {
+            const pageTitles = {
+                'about': 'About Me',
+                'projects': 'Projects',
+                'resume': 'Resume',
+                'notebook': 'Digital Notebook'
+            };
+            
+            alert(`Navigating to ${pageTitles[page]} page`);
+            // In a real implementation, this would load the actual page
+            // window.location.href = `${page}.html`;
+        }
+
+        // Page data
+        const pages = [
+            {
+                "id": "about",
+                "title": "About Me",
+                "description": "Learn more about my journey, interests, and aspirations",
+                "icon": "fa-user",
+                "color": "pastel-pink-dark",
+                "bgColor": "pastel-pink"
+            },
+            {
+                "id": "projects",
+                "title": "Projects",
+                "description": "View my web development and design portfolio",
+                "icon": "fa-code",
+                "color": "pastel-blue-dark",
+                "bgColor": "pastel-blue"
+            },
+            {
+                "id": "resume",
+                "title": "Resume",
+                "description": "Download and view my professional resume",
+                "icon": "fa-file-alt",
+                "color": "pastel-purple-dark",
+                "bgColor": "pastel-purple"
+            },
+            {
+                "id": "notebook",
+                "title": "Digital Notebook",
+                "description": "Browse through my thoughts, notes, and ideas",
+                "icon": "fa-book",
+                "color": "gray-700",
+                "bgColor": "gradient-to-r from-pastel-pink to-pastel-blue"
+            }
+        ];
+
+        // Initialize page
+        document.addEventListener("DOMContentLoaded", function() {
+            console.log("Aarya Haque's Senior Profile homepage loaded successfully");
+            
+            // Add hover effects to all navigation cards
+            const cards = document.querySelectorAll('a > div');
+            cards.forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-4px)';
+                });
+                card.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0)';
+                });
+            });
+        });
     </script>
 </body>
 </html>
+          
+                   
+               
