@@ -1,1 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <base target="_self">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Aarya Haque</title>
+    <meta name="description" content="Aarya Haque's web development and design portfolio projects">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'pastel-pink': '#ffd6e7',
+                        'pastel-blue': '#d6f5ff',
+                        'pastel-purple': '#e6d6ff',
+                        'pastel-pink-dark': '#ffb8d9',
+                        'pastel-blue-dark': '#b3e6ff',
+                        'pastel-purple-dark': '#d1b3ff'
+                    },
+                    fontFamily: {
+                        'dancing': ['Dancing Script', 'cursive'],
+                        'playfair': ['Playfair Display', 'serif'],
+                        'raleway': ['Raleway', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="min-h-screen bg-gradient-to-br from-pastel-purple via-pastel-purple-dark to-pastel-purple font-raleway">
+    <!-- Navigation Header -->
+    <header class="bg-white/80 backdrop-blur-sm shadow-sm sticky top-0 z-10">
+        <nav class="container mx-auto px-4 py-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <!-- Logo and Home Link -->
+                <a href="https://aaryah1.github.io/SeniorProfile/" class="flex items-center space-x-3 mb-4 md:mb-0">
+                    <div class="w-10 h-10 rounded-full bg-gradient-to-br from-pastel-pink to-pastel-purple flex items-center justify-center">
+                        <i class="fas fa-home text-white"></i>
+                    </div>
+                    <span class="text-xl font-playfair font-bold text-gray-800">Aarya Haque</span>
+                </a>
+                
+                <!-- Navigation Links -->
+                <div class="flex flex-wrap justify-center gap-4 md:gap-6">
+                    <a href="https://aaryah1.github.io/SeniorProfile/" class="px-4 py-2 rounded-lg hover:bg-pastel-pink transition-colors duration-300 font-medium text-gray-700 hover:text-gray-900">
+                        <i class="fas fa-home mr-2"></i>Home
+                    </a>
+                    <a href="https://aaryah1.github.io/SeniorProfile/about.html" class="px-4 py-2 rounded-lg hover:bg-pastel-pink transition-colors duration-300 font-medium text-gray-700 hover:text-gray-900">
+                        <i class="fas fa-user mr-2"></i>About Me
+                    </a>
+                    <a href="https://aaryah1.github.io/SeniorProfile/projects.html" class="px-4 py-2 rounded-lg bg-pastel-purple text-gray-900 font-semibold">
+                        <i class="fas fa-code mr-2"></i>Projects
+                    </a>
+                    <a href="https://aaryah1.github.io/SeniorProfile/resume.html" class="px-4 py-2 rounded-lg hover:bg-pastel-pink transition-colors duration-300 font-medium text-gray-700 hover:text-gray-900">
+                        <i class="fas fa-file-alt mr-2"></i>Resume
+                    </a>
+                    <a href="https://aaryah1.github.io/SeniorProfile/notebook.html" class="px-4 py-2 rounded-lg hover:bg-pastel-pink transition-colors duration-300 font-medium text-gray-700 hover:text-gray-900">
+                        <i class="fas fa-book mr-2"></i>Digital Notebook
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
 
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-8 md:py-12">
+        <!-- Page Header -->
+        <div class="text-center mb-12">
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-playfair font-bold text-gray-800 mb-4">
+                My Projects
+            </h1>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                A collection of my web development and design work from 2025-2026
+            </p>
+        </div>
+
+        <!-- Projects Table Container -->
+        <div class="bg-white/90 backdrop-blur-sm rounded-2xl shadow-2xl p-6 md:p-8 mb-12">
+            <!-- Table Header -->
+            <div class="grid grid-cols-3 gap-4 mb-6 pb-4 border-b-2 border-pastel-purple">
+                <div class="text-center">
+                    <h3 class="text-2xl font-playfair font-bold text-gray-800">Title</h3>
+                    <p class="text-gray-500 text-sm mt-1">Project Name</p>
+                </div>
+                <div class="text-center">
+                    <h3 class="text-2xl font-playfair font-bold text-gray-800">Description</h3>
+                    <p class="text-gray-500 text-sm mt-1">Project Overview</p>
+                </div>
+                <div class="text-center">
+                    <h3 class="text-2xl font-playfair font-bold text-gray-800">Link</h3>
+                    <p class="text-gray-500 text-sm mt-1">Live Demo / Repository</p>
+                </div>
+            </div>
+
+            <!-- Table Rows -->
+            <div class="space-y-4">
+                <!-- Row 1 - LovedPets -->
+                <div class="grid grid-cols-3 gap-4 p-4 rounded-lg bg-pastel-purple/30 hover:bg-pastel-purple/50 transition-colors duration-300">
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-r from-pastel-pink to-pastel-purple flex items-center justify-center mr-4">
+                            <span class="text-white font-bold">1</span>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg text-gray-800">LovedPets</h4>
+                            <p class="text-gray-600 text-sm">Animal Shelter Website</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center">
+                        <p class="text-gray-700">
+                            A responsive animal shelter website with adoption, volunteering, and resources sections. Features a pastel color scheme and pet management system.
+                        </p>
+                    </div>
+                    <div class="flex items-center justify-center">
+                        <a href="https://aaryah1.github.io/LovedPets/" 
+                           target="_blank" 
+                           class="inline-flex items-center px-6 py-3 bg-gradient-to-r from-pastel-purple-dark to-pastel-purple text-white font-semibold rounded-lg hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
+                            <i class="fas fa-external-link-alt mr-2"></i>
+                            Visit Site
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Row 2 - Senior Profile -->
+                <div class="grid grid-cols-3 gap-4 p-4 rounded-lg bg-pastel-blue/30 hover:bg-pastel-blue/50 transition-colors duration-300">
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-r from-pastel-blue to-pastel-purple flex items-center justify-center mr-4">
+                            <span class="text-white font-bold">2</span>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg text-gray-800">Senior Profile</h4>
+                            <p class="text-gray-600 text-sm">Portfolio Website</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center">
+                        <p class="text-gray-700">
+                            My personal portfolio website showcasing my work, skills, and projects from the 2025-2026 academic year. Features elegant typography and pastel color scheme.
+                        </p>
+                    </div>
+                    <div class="flex items-center justify-center">
+                        <a href="https://aaryah1.github.io/SeniorProfile/" 
+                           target="_blank" 
+                           class="inline-flex items-center px-6 py-3 bg-gradient-to-r from-pastel-blue-dark to-pastel-blue text-white font-semibold rounded-lg hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
+                            <i class="fas fa-external-link-alt mr-2"></i>
+                            Visit Site
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Row 3 -->
+                <div class="grid grid-cols-3 gap-4 p-4 rounded-lg hover:bg-pastel-purple/30 transition-colors duration-300">
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-r from-pastel-pink to-pastel-blue flex items-center justify-center mr-4">
+                            <span class="text-white font-bold">3</span>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg text-gray-800">Project Title 3</h4>
+                            <p class="text-gray-600 text-sm">Web Application</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center">
+                        <p class="text-gray-700">
+                            A responsive web application with user authentication and data visualization features. Built with modern JavaScript frameworks and RESTful APIs.
+                        </p>
+                    </div>
+                    <div class="flex items-center justify-center">
+                        <button class="px-6 py-3 bg-gray-200 text-gray-500 font-semibold rounded-lg cursor-not-allowed">
+                            <i class="fas fa-link mr-2"></i>
+                            Coming Soon
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Row 4 -->
+                <div class="grid grid-cols-3 gap-4 p-4 rounded-lg hover:bg-pastel-purple/30 transition-colors duration-300">
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-r from-pastel-purple to-pastel-pink flex items-center justify-center mr-4">
+                            <span class="text-white font-bold">4</span>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg text-gray-800">Project Title 4</h4>
+                            <p class="text-gray-600 text-sm">Mobile App Design</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center">
+                        <p class="text-gray-700">
+                            UI/UX design project for a mobile application focusing on user experience and accessibility. Includes wireframes, prototypes, and user testing results.
+                        </p>
+                    </div>
+                    <div class="flex items-center justify-center">
+                        <button class="px-6 py-3 bg-gray-200 text-gray-500 font-semibold rounded-lg cursor-not-allowed">
+                            <i class="fas fa-link mr-2"></i>
+                            Coming Soon
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Row 5 -->
+                <div class="grid grid-cols-3 gap-4 p-4 rounded-lg hover:bg-pastel-purple/30 transition-colors duration-300">
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-r from-pastel-blue to-pastel-pink flex items-center justify-center mr-4">
+                            <span class="text-white font-bold">5</span>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg text-gray-800">Project Title 5</h4>
+                            <p class="text-gray-600 text-sm">E-commerce Website</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center">
+                        <p class="text-gray-700">
+                            Full-stack e-commerce platform with shopping cart, payment integration, and admin dashboard. Built with React, Node.js, and MongoDB.
+                        </p>
+                    </div>
+                    <div class="flex items-center justify-center">
+                        <button class="px-6 py-3 bg-gray-200 text-gray-500 font-semibold rounded-lg cursor-not-allowed">
+                            <i class="fas fa-link mr-2"></i>
+                            Coming Soon
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Row 6 -->
+                <div class="grid grid-cols-3 gap-4 p-4 rounded-lg hover:bg-pastel-purple/30 transition-colors duration-300">
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-r from-pastel-pink to-pastel-purple flex items-center justify-center mr-4">
+                            <span class="text-white font-bold">6</span>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg text-gray-800">Project Title 6</h4>
+                            <p class="text-gray-600 text-sm">Data Visualization</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center">
+                        <p class="text-gray-700">
+                            Interactive data visualization dashboard using D3.js and Chart.js. Features real-time data updates and customizable chart types.
+                        </p>
+                    </div>
+                    <div class="flex items-center justify-center">
+                        <button class="px-6 py-3 bg-gray-200 text-gray-500 font-semibold rounded-lg cursor-not-allowed">
+                            <i class="fas fa-link mr-2"></i>
+                            Coming Soon
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Row 7 -->
+                <div class="grid grid-cols-3 gap-4 p-4 rounded-lg hover:bg-pastel-purple/30 transition-colors duration-300">
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-r from-pastel-blue to-pastel-purple flex items-center justify-center mr-4">
+                            <span class="text-white font-bold">7</span>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg text-gray-800">Project Title 7</h4>
+                            <p class="text-gray-600 text-sm">API Development</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center">
+                        <p class="text-gray-700">
+                            RESTful API development with comprehensive documentation, authentication, and rate limiting. Built with Express.js and PostgreSQL.
+                        </p>
+                    </div>
+                    <div class="flex items-center justify-center">
+                        <button class="px-6 py-3 bg-gray-200 text-gray-500 font-semibold rounded-lg cursor-not-allowed">
+                            <i class="fas fa-link mr-2"></i>
+                            Coming Soon
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Row 8 -->
+                <div class="grid grid-cols-3 gap-4 p-4 rounded-lg hover:bg-pastel-purple/30 transition-colors duration-300">
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-r from-pastel-pink to-pastel-blue flex items-center justify-center mr-4">
+                            <span class="text-white font-bold">8</span>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg text-gray-800">Project Title 8</h4>
+                            <p class="text-gray-600 text-sm">CMS Implementation</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center">
+                        <p class="text-gray-700">
+                            Custom content management system with drag-and-drop interface, media management, and multi-user role system.
+                        </p>
+                    </div>
+                    <div class="flex items-center justify-center">
+                        <button class="px-6 py-3 bg-gray-200 text-gray-500 font-semibold rounded-lg cursor-not-allowed">
+                            <i class="fas fa-link mr-2"></i>
+                            Coming Soon
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Row 9 -->
+                <div class="grid grid-cols-3 gap-4 p-4 rounded-lg hover:bg-pastel-purple/30 transition-colors duration-300">
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-r from-pastel-purple to-pastel-pink flex items-center justify-center mr-4">
+                            <span class="text-white font-bold">9</span>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg text-gray-800">Project Title 9</h4>
+                            <p class="text-gray-600 text-sm">Game Development</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center">
+                        <p class="text-gray-700">
+                            Browser-based game using HTML5 Canvas and JavaScript. Features physics simulation, multiplayer capabilities, and progressive difficulty.
+                        </p>
+                    </div>
+                    <div class="flex items-center justify-center">
+                        <button class="px-6 py-3 bg-gray-200 text-gray-500 font-semibold rounded-lg cursor-not-allowed">
+                            <i class="fas fa-link mr-2"></i>
+                            Coming Soon
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Row 10 -->
+                <div class="grid grid-cols-3 gap-4 p-4 rounded-lg hover:bg-pastel-purple/30 transition-colors duration-300">
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-r from-pastel-blue to-pastel-pink flex items-center justify-center mr-4">
+                            <span class="text-white font-bold">10</span>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg text-gray-800">Project Title 10</h4>
+                            <p class="text-gray-600 text-sm">Blog Platform</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center">
+                        <p class="text-gray-700">
+                            Modern blog platform with markdown support, social sharing, and commenting system. Includes SEO optimization and analytics dashboard.
+                        </p>
+                    </div>
+                    <div class="flex items-center justify-center">
+                        <button class="px-6 py-3 bg-gray-200 text-gray-500 font-semibold rounded-lg cursor-not-allowed">
+                            <i class="fas fa-link mr-2"></i>
+                            Coming Soon
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Row 11 -->
+                <div class="grid grid-cols-3 gap-4 p-4 rounded-lg hover:bg-pastel-purple/30 transition-colors duration-300">
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-r from-pastel-pink to-pastel-purple flex items-center justify-center mr-4">
+                            <span class="text-white font-bold">11</span>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg text-gray-800">Project Title 11</h4>
+                            <p class="text-gray-600 text-sm">Task Management</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center">
+                        <p class="text-gray-700">
+                            Productivity application with task management, calendar integration, and team collaboration features. Real-time updates and notifications.
+                        </p>
+                    </div>
+                    <div class="flex items-center justify-center">
+                        <button class="px-6 py-3 bg-gray-200 text-gray-500 font-semibold rounded-lg cursor-not-allowed">
+                            <i class="fas fa-link mr-2"></i>
+                            Coming Soon
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Row 12 -->
+                <div class="grid grid-cols-3 gap-4 p-4 rounded-lg hover:bg-pastel-purple/30 transition-colors duration-300">
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-r from-pastel-blue to-pastel-purple flex items-center justify-center mr-4">
+                            <span class="text-white font-bold">12</span>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg text-gray-800">Project Title 12</h4>
+                            <p class="text-gray-600 text-sm">Social Media App</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center">
+                        <p class="text-gray-700">
+                            Social networking application with user profiles, friend connections, and content sharing. Includes image upload and messaging features.
+                        </p>
+                    </div>
+                    <div class="flex items-center justify-center">
+                        <button class="px-6 py-3 bg-gray-200 text-gray-500 font-semibold rounded-lg cursor-not-allowed">
+                            <i class="fas fa-link mr-2"></i>
+                            Coming Soon
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Row 13 -->
+                <div class="grid grid-cols-3 gap-4 p-4 rounded-lg hover:bg-pastel-purple/30 transition-colors duration-300">
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-r from-pastel-pink to-pastel-blue flex items-center justify-center mr-4">
+                            <span class="text-white font-bold">13</span>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg text-gray-800">Project Title 13</h4>
+                            <p class="text-gray-600 text-sm">Weather Dashboard</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center">
+                        <p class="text-gray-700">
+                            Weather application with location-based forecasts, radar maps, and severe weather alerts. Integrates with multiple weather APIs.
+                        </p>
+                    </div>
+                    <div class="flex items-center justify-center">
+                        <button class="px-6 py-3 bg-gray-200 text-gray-500 font-semibold rounded-lg cursor-not-allowed">
+                            <i class="fas fa-link mr-2"></i>
+                            Coming Soon
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Row 14 -->
+                <div class="grid grid-cols-3 gap-4 p-4 rounded-lg hover:bg-pastel-purple/30 transition-colors duration-300">
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-r from-pastel-purple to-pastel-pink flex items-center justify-center mr-4">
+                            <span class="text-white font-bold">14</span>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg text-gray-800">Project Title 14</h4>
+                            <p class="text-gray-600 text-sm">Fitness Tracker</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center">
+                        <p class="text-gray-700">
+                            Health and fitness application with workout tracking, nutrition logging, and progress visualization. Syncs with wearable devices.
+                        </p>
+                    </div>
+                    <div class="flex items-center justify-center">
+                        <button class="px-6 py-3 bg-gray-200 text-gray-500 font-semibold rounded-lg cursor-not-allowed">
+                            <i class="fas fa-link mr-2"></i>
+                            Coming Soon
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Row 15 -->
+                <div class="grid grid-cols-3 gap-4 p-4 rounded-lg hover:bg-pastel-purple/30 transition-colors duration-300">
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-r from-pastel-blue to-pastel-pink flex items-center justify-center mr-4">
+                            <span class="text-white font-bold">15</span>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg text-gray-800">Project Title 15</h4>
+                            <p class="text-gray-600 text-sm">Recipe Collection</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center">
+                        <p class="text-gray-700">
+                            Recipe management application with search, filtering, and meal planning features. Includes nutritional information and shopping list generation.
+                        </p>
+                    </div>
+                    <div class="flex items-center justify-center">
+                        <button class="px-6 py-3 bg-gray-200 text-gray-500 font-semibold rounded-lg cursor-not-allowed">
+                            <i class="fas fa-link mr-2"></i>
+                            Coming Soon
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Row 16 -->
+                <div class="grid grid-cols-3 gap-4 p-4 rounded-lg hover:bg-pastel-purple/30 transition-colors duration-300">
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-r from-pastel-pink to-pastel-purple flex items-center justify-center mr-4">
+                            <span class="text-white font-bold">16</span>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg text-gray-800">Project Title 16</h4>
+                            <p class="text-gray-600 text-sm">Educational Platform</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center">
+                        <p class="text-gray-700">
+                            Online learning platform with course creation, student management, and assessment tools. Supports video lectures and interactive quizzes.
+                        </p>
+                    </div>
+                    <div class="flex items-center justify-center">
+                        <button class="px-6 py-3 bg-gray-200 text-gray-500 font-semibold rounded-lg cursor-not-allowed">
+                            <i class="fas fa-link mr-2"></i>
+                            Coming Soon
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Back to Home Button -->
+        <div class="text-center">
+            <a href="https://aaryah1.github.io/SeniorProfile/" class="inline-flex items-center px-8 py-4 bg-gradient-to-r from-pastel-purple to-pastel-pink text-white font-bold text-lg rounded-full hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                <i class="fas fa-arrow-left mr-3"></i>
+                Back to Home
+            </a>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white/80 backdrop-blur-sm mt-12 py-8">
+        <div class="container mx-auto px-4">
+            <div class="text-center">
+                <p class="text-gray-600 mb-2">© 2025-2026 Aarya Haque</p>
+                <p class="text-gray-500 text-sm">Senior Profile - Web & Design</p>
+                <div class="flex justify-center space-x-6 mt-4">
+                    <a href="https://aaryah1.github.io/SeniorProfile/" class="text-gray-500 hover:text-pastel-purple-dark transition-colors duration-300">
+                        <i class="fas fa-home"></i>
+                    </a>
+                    <a href="https://aaryah1.github.io/SeniorProfile/about.html" class="text-gray-500 hover:text-pastel-purple-dark transition-colors duration-300">
+                        <i class="fas fa-user"></i>
+                    </a>
+                    <a href="https://aaryah1.github.io/SeniorProfile/projects.html" class="text-pastel-purple-dark">
+                        <i class="fas fa-code"></i>
+                    </a>
+                    <a href="https://aaryah1.github.io/SeniorProfile/resume.html" class="text-gray-500 hover:text-pastel-purple-dark transition-colors duration-300">
+                        <i class="fas fa-file-alt"></i>
+                    </a>
+                    <a href="https://aaryah1.github.io/SeniorProfile/notebook.html" class="text-gray-500 hover:text-pastel-purple-dark transition-colors duration-300">
+                        <i class="fas fa-book"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Projects data
+        const projects = [
+            {
+                "id": 1,
+                "title": "LovedPets",
+                "category": "Animal Shelter Website",
+                "description": "A responsive animal shelter website with adoption, volunteering, and resources sections. Features a pastel color scheme and pet management system.",
+                "link": "https://aaryah1.github.io/LovedPets/",
+                "status": "live"
+            },
+            {
+                "id": 2,
+                "title": "Senior Profile",
+                "category": "Portfolio Website",
+                "description": "My personal portfolio website showcasing my work, skills, and projects from the 2025-2026 academic year. Features elegant typography and pastel color scheme.",
+                "link": "https://aaryah1.github.io/SeniorProfile/",
+                "status": "live"
+            }
+        ];
+
+        // Initialize page
+        document.addEventListener("DOMContentLoaded", function() {
+            console.log("Projects page loaded successfully");
+            
+            // Add hover effects to table rows
+            const tableRows = document.querySelectorAll('.grid.grid-cols-3.gap-4.p-4.rounded-lg');
+            tableRows.forEach(row => {
+                row.addEventListener('mouseenter', function() {
+                    if (!this.classList.contains('bg-pastel-purple/30') && !this.classList.contains('bg-pastel-blue/30')) {
+                        this.style.transform = 'translateY(-2px)';
+                    }
+                });
+                row.addEventListener('mouseleave', function() {
+                    if (!this.classList.contains('bg-pastel-purple/30') && !this.classList.contains('bg-pastel-blue/30')) {
+                        this.style.transform = 'translateY(0)';
+                    }
+                });
+            });
+
+            // Update page title with project count
+            const liveProjects = projects.filter(p => p.status === "live").length;
+            const pageTitle = document.querySelector('h1');
+            if (pageTitle) {
+                pageTitle.innerHTML = `My Projects <span class="text-pastel-purple-dark">(${liveProjects} Live Projects)</span>`;
+            }
+
+            // Update navigation active states
+            const currentPath = window.location.href;
+            const navLinks = document.querySelectorAll('nav a');
+            navLinks.forEach(link => {
+                if (link.href === currentPath || (currentPath.includes('projects.html') && link.textContent.includes('Projects'))) {
+                    link.classList.add('bg-pastel-purple', 'text-gray-900', 'font-semibold');
+                    link.classList.remove('hover:bg-pastel-pink', 'text-gray-700');
+                }
+            });
+        });
+
+        // Navigation function
+        function navigateTo(page) {
+            console.log(`Navigating to ${page}`);
+        }
+    </script>
+</body>
+  </html>
